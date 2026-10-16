@@ -1,4 +1,4 @@
-# Retail Receipt Intelligence
+# Japan Retail CRM — WeChat Receipt Intelligence
 
 **日本市場の小売 CRM 運用リファレンス**  
 WeChat、レシート OCR、特典運用を通じて、WeChat 利用顧客の店頭購買を継続的に活用できる顧客データへつなぐケーススタディです。
@@ -32,9 +32,20 @@ GitHub Pages では、日本語を初期表示とし、中国語・英語の独�
 - `zh.html` — 中文
 - `en.html` — English
 
-### 再利用できる方法論
+### ケース記述の共通フィールド
 
-[`skill/japan-wechat-retail-crm/`](skill/japan-wechat-retail-crm/) には、この事例から抽出した日本市場向けの小売 CRM 運用設計 Skill を格納しています。私有ソースコードではなく、要件整理、統合方針、OCR の品質・審査設計、ベンダーガバナンスに利用する方法論です。
+今後の公開ケースでは、役割を曖昧にしないため、以下を標準フィールドとして使用します。
+
+```markdown
+## Insight Ownership
+発見した事業課題、検証仮説、顧客価値、意思決定の根拠。
+
+## Execution Ownership
+構想、要件、関係者・ベンダー管理、開発調整、テスト、ローンチ、検証までの実行責任。
+
+## Ownership Boundaries
+自ら保有した判断・成果責任と、外部ベンダー／他部門が担った実装・運用責任。
+```
 
 ### 公開範囲
 
@@ -67,9 +78,20 @@ GitHub Pages 默认打开日语版，同时提供独立重写的中文和英文�
 - `zh.html` — 中文
 - `en.html` — English
 
-### 可复用 Skill
+### 案例 Markdown 标准
 
-[`skill/japan-wechat-retail-crm/`](skill/japan-wechat-retail-crm/) 是本项目的方法论资产。它不是可直接部署的私有生产系统，而是一套可用于调研、方案设计、供应商比较、OCR 审核规则和公开案例整理的日本市场零售 CRM 蓝图。
+今后每个公开案例固定使用以下字段，避免把洞察、执行与责任边界混在一起：
+
+```markdown
+## Insight Ownership
+发现了什么业务问题；提出了什么假设、顾客价值和决策依据。
+
+## Execution Ownership
+从构想、需求、相关方与供应商管理、开发协调、测试、上线到验证的执行责任。
+
+## Ownership Boundaries
+本人承担的判断与成果责任，以及外部供应商或其他部门承担的实施与运营责任。
+```
 
 ### 公开边界
 
@@ -102,9 +124,20 @@ GitHub Pages defaults to Japanese and offers independently written Chinese and E
 - `zh.html` — Chinese
 - `en.html` — English
 
-### Reusable method Skill
+### Standard case-study Markdown
 
-[`skill/japan-wechat-retail-crm/`](skill/japan-wechat-retail-crm/) packages the domain method from this project. It is not a deployable private system; it is a blueprint for discovery, solution design, vendor comparison, OCR review rules, and public case-study work in the Japan retail context.
+Every future public case uses these fields to distinguish discovery, delivery, and accountability:
+
+```markdown
+## Insight Ownership
+The business problem identified, validation hypothesis, customer value, and decision rationale.
+
+## Execution Ownership
+Responsibility for delivery from concept and requirements through stakeholder/vendor management, coordination, testing, launch, and validation.
+
+## Ownership Boundaries
+The decisions and outcomes owned directly, versus implementation or operations owned by a vendor or other team.
+```
 
 ### Public scope
 
