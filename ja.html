@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1TG0Q9CJZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D1TG0Q9CJZ');
+  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="百貨店の購買を継続的に活用できる顧客データへ変える、WeChat ミニプログラムの事業ケース。">
+<title>Japan Retail CRM — WeChat Receipt Intelligence | Case Study</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#17221e;font:16px/1.75 system-ui,sans-serif}.shell{max-width:1180px;margin:auto;padding:0 32px}.top{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid #dcd9cf}.language{display:flex;gap:7px}.language a,.language b{padding:5px 9px;text-decoration:none;border-radius:99px}.language b{background:#145b48;color:#fff}.kicker{color:#145b48;font-size:12px;font-weight:800;letter-spacing:.13em}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:90px 0 72px}.hero h1{font-size:clamp(45px,6.2vw,78px);line-height:1.03;margin:18px 0 25px}.hero p,.lead{font-size:19px;color:#3e4943}.hero-art{height:430px;border-radius:210px 210px 14px 14px;overflow:hidden}.hero-art img{width:100%;height:100%;object-fit:cover}.facts,.grid2,.grid3{display:grid;gap:18px}.facts{grid-template-columns:repeat(3,1fr);border-block:1px solid #dcd9cf}.fact{padding:26px 22px;border-right:1px solid #dcd9cf}.fact strong{display:block;font-size:37px;color:#145b48}.metric-note{color:#66726b;font-size:13px}.section{padding:88px 0;border-bottom:1px solid #dcd9cf}.section h2{font-size:clamp(31px,4vw,46px);line-height:1.12;margin:14px 0 22px}.grid2{grid-template-columns:repeat(2,1fr);margin-top:36px}.grid3{grid-template-columns:repeat(3,1fr);margin-top:36px}.card,.future{padding:27px;background:#fff;border:1px solid #dcd9cf;border-radius:10px}.dark{margin-top:34px;padding:44px;background:#145b48;color:#fff;border-radius:12px}.dark .lead,.dark .card p{color:#d7e8e0}.dark .card{background:#226752;border-color:#548c7a}.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin-top:36px}.node{min-height:126px;padding:17px 13px;border-radius:8px;background:#e5ede7;display:flex;align-items:flex-end;font-weight:700}.architecture,.role{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;margin-top:36px}.diagram{padding:28px;background:#e6eee8;border-radius:10px}.layer{padding:14px 16px;margin-bottom:9px;background:#fff;border-radius:6px;font-weight:700}.role{grid-template-columns:.85fr 1.15fr}.checklist li{padding:15px 0;border-bottom:1px solid #dcd9cf}.footer{padding:34px 0 55px;color:#66726b;font-size:13px}@media(max-width:760px){.shell{padding:0 20px}.hero,.architecture,.role,.grid2,.grid3,.facts{grid-template-columns:1fr;gap:30px}.hero{padding:56px 0}.hero-art{height:310px}.fact{border-right:0;border-bottom:1px solid #dcd9cf}.flow{grid-template-columns:repeat(2,1fr)}.section{padding:62px 0}.dark{padding:28px}}</style>
+<link rel="stylesheet" href="assets/case-study.css">
+</head>
+<body>
+<main class="shell">
+<header class="top">
+<span class="kicker">Business case / 2026</span>
+<nav class="language" aria-label="Language">
+<b>日本語</b>
+<a href="zh.html">中文</a>
+<a href="index.html">EN</a>
+</nav>
+</header>
+<section class="hero">
+<div>
+<div class="kicker">Japan retail · WeChat mini program · CRM</div>
+<h1>WeChat 利用顧客は、<br>買い物を終えると見えなくなる。</h1>
+<p>日本の店舗では、WeChat 利用顧客が購入しても、誰が何を買ったのかを次の接点に活かせないことがある。本件では会員・レシート証憑・特典を結び、実購買に基づく CRM 運用の入口を事業側から設計・推進した。</p>
+</div>
+<div class="hero-art">
+<img src="assets/retail-campaign.jpg" alt="Retail campaign visual">
+</div>
+</section>
+<section class="facts">
+<div class="fact">
+<strong>500+</strong>
+<span>追跡可能な購買顧客 ID</span>
+</div>
+<div class="fact">
+<strong>800+</strong>
+<span>有効レシート</span>
+</div>
+<div class="fact">
+<strong>¥70M+</strong>
+<span>Traceable GMV</span>
+</div>
+</section>
+<p class="metric-note">約1か月の実証期間。Traceable GMV は顧客 ID と紐付けて捕捉した購買額であり、施策による増分売上ではない。</p>
+<section class="section">
+<div class="kicker">01 / Business problem</div>
+<h2>金額は見える。<br>しかし「誰が、何を買ったか」は見えない。</h2>
+<p class="lead">既存の取引情報だけでは、WeChat 利用顧客の ID、購入ブランド、カテゴリ、価格帯、買い合わせを継続的に捉えられない。会員施策、ブランド協業、リピート提案が、推測に留まる構造だった。</p>
+<div class="grid2">
+<article class="card">
+<h3>従来の状態</h3>
+<p>一回限りの店舗取引。取引金額はあっても、顧客別・ブランド別に再利用できる購買シグナルが不足していた。</p>
+</article>
+<article class="card">
+<h3>目指した状態</h3>
+<p>会員 ID と購買証憑を結び、ブランド・カテゴリ・金額・時点を構造化。次の運用判断に使える顧客理解をつくる。</p>
+</article>
+</div>
+</section>
+<section class="section">
+<div class="kicker">02 / Decision rationale</div>
+<h2>なぜ POS 連携を待たず、<br>レシート起点にしたのか。</h2>
+<p class="lead">結論は「最も高度な技術」ではなく、「最も早く、実購買データと運用可能性を同時に検証できる入口」を選ぶことだった。</p>
+<div class="dark">
+<div class="kicker">Choice made</div>
+<h2>顧客自身のレシート登録で、価値を先に実証する。</h2>
+<p class="lead">POS・会員基盤の直接連携は将来像として有効だが、複数システム、部門、ベンダーをまたぐ。初期は顧客の自発的な登録を入口とし、データ品質、特典運用、行動変化を小さく検証した。</p>
+<div class="grid2">
+<article class="card">
+<h3>優先しなかった選択肢</h3>
+<p>POS 直接連携は時間と調整コストが大きい。店員の手入力は現場負荷と再現性に課題がある。登録やアンケートだけでは、実際の購買内容を確認できない。</p>
+</article>
+<article class="card">
+<h3>選んだ設計</h3>
+<p>会員 ID、レシート画像、OCR、審査、ポイント、ギフトを一つの運用ループにする。将来の POS・EC 連携を阻害しない、段階的な構成とした。</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="kicker">03 / Operating model</div>
+<h2>プロダクトではなく、<br>運用される仕組みとして設計した。</h2>
+<p class="lead">顧客の操作だけで完結させず、確認・例外処理・特典付与・分析までを一つの業務フローに置いた。</p>
+<div class="flow">
+<div class="node">WeChat ログイン<br>会員登録</div>
+<div class="node">店舗での購買<br>レシート受領</div>
+<div class="node">レシート画像を<br>アップロード</div>
+<div class="node">OCR 抽出<br>照合・審査</div>
+<div class="node">会員 ID に紐付け<br>特典を付与</div>
+<div class="node">CRM 分析と<br>次の施策へ</div>
+</div>
+<p class="callout">自動化だけを前提にせず、重複・金額異常・読み取り不確実な証憑を扱う確認導線を残した。運用不能な自動化を避けるための設計である。</p>
+</section>
+<section class="section">
+<div class="kicker">04 / Product evidence</div>
+<h2>画面ではなく、<br>運用接点まで設計する。</h2>
+<p class="lead">公開用に識別情報を匿名化した実画面。顧客接点、会員・特典画面、購買証憑のアップロード導線を、同じ運用ループとしてつないだ。</p>
+<div class="screenshots">
+<figure><img src="assets/app-home-anonymized.png" alt="匿名化したWeChatミニプログラムのホーム画面"><figcaption>顧客向けコンテンツと店舗接点</figcaption></figure>
+<figure><img src="assets/app-profile-anonymized.png" alt="匿名化したWeChatミニプログラムの会員画面"><figcaption>会員・特典・購買履歴の入口</figcaption></figure>
+<figure><img src="assets/app-receipt-upload-anonymized.png" alt="匿名化したWeChatミニプログラムのレシートアップロード画面"><figcaption>購買証憑の登録と分析の起点</figcaption></figure>
+</div>
+<p class="metric-note">画面内のブランド、固有名称、ロゴ、プログラム名称は公開用に匿名化している。</p>
+</section>
+<section class="section">
+<div class="kicker">05 / Architecture design</div>
+<h2>技術と運用を、<br>ひとつの設計として束ねる。</h2>
+<p class="lead">外部ベンダーによる実装を前提に、事業要件・現場運用・データ品質を一つの全体設計へ統合。顧客導線から例外処理、将来の接続可能性までを主導設計した。</p>
+<div class="architecture">
+<div class="diagram" aria-label="System architecture abstraction">
+<div class="layer">顧客導線：会員登録 / レシート登録 / 特典確認</div>
+<div class="layer">運用導線：審査 / 会員検索 / キャンペーン / 引換</div>
+<div class="layer">業務サービス：OCR / ポイント / ギフト / 分析出力</div>
+<div class="layer">基盤：API / データベース / キャッシュ / 画像保管 / コンテナ運用</div>
+</div>
+<div class="card">
+<h3>設計原則</h3>
+<ul>
+<li>顧客体験と運用画面を分離し、日常業務を止めない</li>
+<li>OCR は読取率だけでなく、合計・税額・明細・例外処理で評価する</li>
+<li>認識結果は照合と人手確認を経て、初めて特典処理に接続する</li>
+<li>POS・EC との将来連携を阻害しないデータとモジュールの境界を保つ</li>
+</ul>
+</div>
+</div>
+<div class="grid3">
+<article class="card">
+<h3>品質設計</h3>
+<p>合計金額・税額・明細・日時を、運用上使える精度と例外の追跡可能性で評価した。</p>
+</article>
+<article class="card">
+<h3>提供体制の設計</h3>
+<p>機能だけでなく、運用負荷、将来拡張、費用、実装順序を比較してスコープを組み立てた。</p>
+</article>
+<article class="card">
+<h3>データ設計</h3>
+<p>画像、OCR 状態、購買時点、金額、明細、ポイント、審査状態、異常フラグを一貫して追える形にした。</p>
+</article>
+</div>
+</section>
+<section class="section">
+<div class="kicker">06 / Delivery principles</div>
+<div class="role">
+<div>
+<h2>構想を、<br>運用資産へ。</h2>
+<p class="quote">事業仮説、顧客価値、運用現場、技術制約を分断せず、一つの実装可能な仕組みへ編み直す。</p>
+</div>
+<ul class="checklist">
+<li>対象顧客・事業目的・検証範囲を明確にする</li>
+<li>投資優先順位と提供範囲を、価値と実現性の両面から定める</li>
+<li>会員・証憑・審査・ポイント・ギフトを一貫した業務ルールへ落とす</li>
+<li>社内外の関係者を、開発・検証・ローンチの同じ判断軸でつなぐ</li>
+<li>初期運用をデータで振り返り、次の拡張に必要な条件を見極める</li>
+<li>POS・EC・分析への拡張を、初期設計から見通す</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<div class="kicker">07 / Customer intelligence</div>
+<h2>言語ではなく、<br>行動で顧客を理解する。</h2>
+<p class="lead">WeChat 利用者を一つの顧客像として扱わない。国籍、来店目的、ブランド選好、価格帯、買い合わせは多様であり、言語だけでは将来の顧客セグメントを設計できない。</p>
+<div class="grid2">
+<article class="card">
+<h3>実証で得た基盤</h3>
+<p>顧客 ID と購買証憑を結ぶことで、購買規模、ブランド構成、カテゴリ、価格帯、買い合わせを、顧客別に理解する入口を作った。</p>
+</article>
+<article class="future">
+<h3>次の顧客理解へ</h3>
+<p>国籍や言語による一律の区分ではなく、実購買の傾向に基づくセグメント、特典設計、ブランド別の顧客理解へ拡張する。これらは次フェーズの構想である。</p>
+</article>
+</div>
+</section>
+<section class="section">
+<div class="kicker">08 / Ownership boundaries</div>
+<h2>洞察、実行、責任範囲を<br>曖昧にしない。</h2>
+<div class="grid3">
+<article class="card"><h3>Insight Ownership</h3><p>顧客データの断絶を事業課題として定義し、レシート起点の検証仮説、顧客価値、セグメント設計の方向性を主導した。</p></article>
+<article class="card"><h3>Execution Ownership</h3><p>構想から要件定義、ベンダー選定・管理、開発調整、テスト、ローンチ、初期キャンペーン、データ検証、次フェーズ構想までを一貫して推進した。</p></article>
+<article class="card"><h3>Ownership Boundaries</h3><p>ソフトウェアの実装・保守は外部ベンダーが担う。事業設計、仕様優先順位、受入基準、運用設計、ローンチ判断と成果検証は事業側で保有した。</p></article>
+</div>
+</section>
+<section class="section cta-section">
+<div class="kicker">09 / Continue the conversation</div>
+<h2>事業成長のケーススタディを<br>さらに見る。</h2>
+<p class="lead">日本・中国・APAC 市場における EC、CRM、デジタル顧客体験、マーケット実行に関する関連ケースは、GitHub プロフィールで確認できる。</p>
+<a class="cta-link" href="https://github.com/yuchanyuchan1225-hash" target="_blank" rel="noopener">GitHub プロフィールを見る <span aria-hidden="true">→</span></a>
+</section>
+</main>
+<footer class="shell footer">Retail Receipt Intelligence · Japan-market retail operating reference · Business-side project ownership</footer>
+</body>
+</html>

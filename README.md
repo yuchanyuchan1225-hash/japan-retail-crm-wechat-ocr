@@ -11,7 +11,7 @@ WeChat、レシート OCR、特典運用を通じて、WeChat 利用顧客の店
 
 ### このリポジトリについて
 
-日本の小売現場で、WeChat 利用顧客の一回限りの購買を、会員・購買証憑・特典・CRM の運用ループへ変えるための公開リファレンスです。
+日本の店舗では、WeChat 利用顧客が購入しても、誰が何を買ったのかを次の接点に活かせないことがあります。本リファレンスは、その一回限りの購買を会員・購買証憑・特典・CRM の運用ループへ変えるための公開ケースです。
 
 主題は特定の小程序コードを公開することではありません。POS の全面連携を待たずに、顧客自身のレシート登録を入口として、実購買データ、OCR の品質管理、例外審査、特典付与、次の CRM 活用をどう段階的に成立させるかを示します。
 
@@ -26,11 +26,12 @@ WeChat、レシート OCR、特典運用を通じて、WeChat 利用顧客の店
 
 ### 公開ケースページ
 
-GitHub Pages では、日本語を初期表示とし、中国語・英語の独立した説明も提供します。
+GitHub Pages は英語を初期表示とし、日本語・中国語の独立した説明も提供します。
 
-- `index.html` — 日本語
+- `index.html` — English (default)
+- `ja.html` — 日本語
 - `zh.html` — 中文
-- `en.html` — English
+- `en.html` — English (direct link)
 
 ### ケース記述の共通フィールド
 
@@ -51,13 +52,17 @@ GitHub Pages では、日本語を初期表示とし、中国語・英語の独�
 
 本リポジトリには、私有ソースコード、顧客情報、原票、実在するクラウド識別子、API 情報、または取引先固有の情報は含めていません。ページの数値は公開用に丸めています。Traceable GMV は顧客 ID と紐付けて捕捉した購買額であり、施策による増分売上ではありません。
 
+### 連絡先
+
+関連する対話・ケースの確認は、[GitHub プロフィール](https://github.com/yuchanyuchan1225-hash)を参照してください。
+
 ---
 
 ## 中文
 
 ### 这个仓库是什么
 
-这是一个面向日本零售场景的公开参考案例：如何以 WeChat、小票 OCR 和权益运营为入口，把所有微信用户的一次线下购买变成可被 CRM 使用的顾客数据。
+在日本门店，微信用户买完就走，企业却未必知道他是谁、买了什么。本案例展示如何以 WeChat、小票 OCR 和权益运营为入口，把这一次线下购买变成可被 CRM 使用的顾客数据。
 
 它不公开某个供应商交付的小程序源码。它公开的是方法：当 POS 或既有会员系统暂时无法直接连接时，如何先通过顾客上传购物凭证，验证真实消费数据、审核机制、权益激励和运营闭环，再逐步扩展到更深的数据连接。
 
@@ -72,11 +77,12 @@ GitHub Pages では、日本語を初期表示とし、中国語・英語の独�
 
 ### 案例页面
 
-GitHub Pages 默认打开日语版，同时提供独立重写的中文和英文版本：
+GitHub Pages 默认打开英文版，同时提供独立重写的日语和中文版本：
 
-- `index.html` — 日本語
+- `index.html` — English（默认）
+- `ja.html` — 日本語
 - `zh.html` — 中文
-- `en.html` — English
+- `en.html` — English（直接链接）
 
 ### 案例 Markdown 标准
 
@@ -95,7 +101,11 @@ GitHub Pages 默认打开日语版，同时提供独立重写的中文和英文�
 
 ### 公开边界
 
-仓库不包含私有源代码、客户信息、原始小票、真实云资源标识、接口信息或供应商专有内容。页面数据均为公开展示而做了范围化处理。Traceable GMV 是已关联顾客 ID 的捕获消费金额，不代表活动直接创造的增量销售。
+仓库不包含私有源代码、客户信息、原始小票、真实云资源标识、接口信息或供应商专有内容。页面数据均为公开展示而做了范围化处理。中文页金额明确标为约 7,000 万日元（JP¥70M+）。Traceable GMV 是已关联顾客 ID 的捕获消费金额，不代表活动直接创造的增量销售。
+
+### 联系方式
+
+如需交流相关案例，请前往 [GitHub 主页](https://github.com/yuchanyuchan1225-hash)。
 
 ---
 
@@ -103,7 +113,7 @@ GitHub Pages 默认打开日语版，同时提供独立重写的中文和英文�
 
 ### What this repository is
 
-This is a public operating reference for Japan retail teams serving WeChat users. It shows how a WeChat touchpoint, receipt evidence, OCR, and rewards can turn a one-time store purchase into customer intelligence that a CRM team can use.
+In Japan retail, a WeChat user can complete a purchase and leave without a reusable customer record. This public operating reference shows how a WeChat touchpoint, receipt evidence, OCR, and rewards can turn that transaction into customer intelligence a CRM team can use.
 
 It does not publish a supplier-delivered Mini Program codebase. It publishes the operating logic: when direct POS or loyalty-platform integration is not yet practical, use customer-submitted receipt evidence to validate real purchase data, review controls, incentives, and an operating loop before committing to deeper integration.
 
@@ -118,11 +128,12 @@ It does not publish a supplier-delivered Mini Program codebase. It publishes the
 
 ### Case-study pages
 
-GitHub Pages defaults to Japanese and offers independently written Chinese and English pages:
+GitHub Pages defaults to English and offers independently written Japanese and Chinese pages:
 
-- `index.html` — Japanese
+- `index.html` — English (default)
+- `ja.html` — Japanese
 - `zh.html` — Chinese
-- `en.html` — English
+- `en.html` — English (direct link)
 
 ### Standard case-study Markdown
 
@@ -142,3 +153,7 @@ The decisions and outcomes owned directly, versus implementation or operations o
 ### Public scope
 
 This repository excludes private source code, customer data, raw receipts, real cloud identifiers, API details, and supplier-specific materials. Metrics are rounded for public presentation. Traceable GMV means captured spend linked to customer identity; it is not campaign-attributed or incremental revenue.
+
+### Contact
+
+For relevant discussions or the broader portfolio, visit the [GitHub profile](https://github.com/yuchanyuchan1225-hash).
